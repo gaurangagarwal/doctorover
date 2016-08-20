@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaurang.doctorover.AddObsv">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/addObservationsNameHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Patient Name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <LinearLayout
+                android:id="@+id/addObsvConditionLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObservationsNameHead">
+
+                <TextView
+                    android:id="@+id/addObsvConditionHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Condition" />
+
+                <Spinner
+                    android:id="@+id/addObsvConditionSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/addObsvConditionHead"
+                    android:layout_toEndOf="@+id/addObsvConditionHead"
+                    android:layout_toRightOf="@+id/addObsvConditionHead" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addObsvOperativeLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvConditionLL">
+
+                <TextView
+                    android:id="@+id/addObsvOperativeHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Operative" />
+
+                <Spinner
+                    android:id="@+id/addObsvOperativeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Investigation Section-->
+            <TextView
+                android:id="@+id/addObsvInvestigationHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addObsvOperativeLL"
+                android:layout_marginTop="10dp"
+                android:text="Investigation"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <!-- Blood Investigations-->
+            <LinearLayout
+                android:id="@+id/addObsvBloodLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvInvestigationHead">
+
+                <TextView
+                    android:id="@+id/addObsvBloodInvHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Blood" />
+
+                <EditText
+                    android:id="@+id/addObsvBloodInvInput"
+                    style="@style/addObsvInput"
+                    android:layout_alignBaseline="@+id/addObsvBloodInvHead"
+                    android:layout_toEndOf="@+id/addObsvBloodInvHead"
+                    android:layout_toRightOf="@+id/addObsvBloodInvHead" />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/addObsvBloodInvHead"-->
+            <!--style="@style/addObsvInputHead"-->
+            <!--android:text="Blood"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_below="@+id/addObsvInvestigationHead" />-->
+            <!--<EditText-->
+            <!--android:id="@+id/addObsvBloodInvInput"-->
+            <!--style="@style/addObsvInput"-->
+            <!--android:layout_alignBaseline="@+id/addObsvBloodInvHead"-->
+            <!--android:layout_toEndOf="@+id/addObsvBloodInvHead"-->
+            <!--android:layout_toRightOf="@+id/addObsvBloodInvHead"/>-->
+
+
+            <!-- Radio Investigations-->
+
+            <LinearLayout
+                android:id="@+id/addObsvRadioLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvBloodLL">
+
+                <TextView
+                    android:id="@+id/addObsvRadioInvHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Radio" />
+
+                <EditText
+                    android:id="@+id/addObsvRadioInvInput"
+                    style="@style/addObsvInput"
+                    android:layout_alignBaseline="@+id/addObsvRadioInvHead"
+                    android:layout_toEndOf="@+id/addObsvRadioInvHead"
+                    android:layout_toRightOf="@+id/addObsvRadioInvHead" />
+            </LinearLayout>
+
+            <!-- Vitals Section-->
+            <TextView
+                android:id="@+id/addObsvVitalsHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addObsvRadioLL"
+                android:layout_marginTop="15dp"
+                android:text="Vitals"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <!-- Temp Investigations-->
+            <LinearLayout
+                android:id="@+id/addObsvTempLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvVitalsHead">
+
+                <TextView
+                    android:id="@+id/addObsvTempHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Temperature" />
+
+                <Spinner
+                    android:id="@+id/addObsvTempSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/addObsvTempHead"
+                    android:layout_toEndOf="@+id/addObsvTempHead"
+                    android:layout_toRightOf="@+id/addObsvTempHead" />
+            </LinearLayout>
+
+            <!-- Pulse Investigations-->
+            <LinearLayout
+                android:id="@+id/addObsvPulseLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvTempLL">
+
+                <TextView
+                    android:id="@+id/addObsvPulseHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Pulse" />
+
+                <EditText
+                    android:id="@+id/addObsvPulseInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="150dp"
+                    android:layout_alignBaseline="@+id/addObsvPulseHead"
+                    android:layout_toEndOf="@+id/addObsvPulseHead"
+                    android:layout_toRightOf="@+id/addObsvPulseHead"
+                    android:inputType="number"
+                    android:maxLength="3" />
+
+                <TextView
+                    android:id="@+id/addObsvPulseUnits"
+                    style="@style/addObsvInputHead"
+                    android:layout_alignBaseline="@+id/addObsvPulseHead"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_toEndOf="@+id/addObsvPulseInput"
+                    android:layout_toRightOf="@+id/addObsvPulseInput"
+                    android:text="per min" />
+            </LinearLayout>
+
+            <!-- Respiration  Investigations-->
+            <LinearLayout
+                android:id="@+id/addObsvRespLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvPulseLL">
+
+                <TextView
+                    android:id="@+id/addObsvRespHead"
+                    style="@style/addObsvInputHead"
+                    android:text="Respiration" />
+
+                <Spinner
+                    android:id="@+id/addObsvRespSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Others-->
+            <TextView
+                android:id="@+id/addObsvOthersHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addObsvRespLL"
+                android:layout_marginTop="10dp"
+                android:text="Others"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <RelativeLayout
+                android:id="@+id/addObsvGenExamLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/addObsvOthersHead">
+
+                <TextView
+                    android:id="@+id/addObsvGenExamHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Gen. Exam." />
+
+                <ImageView
+                    android:id="@+id/addObsvGenExamExpandImg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:onClick="genExamListViewVisible"
+                    android:src="@drawable/expand_arrow" />
+
+                <TextView
+                    android:id="@+id/addObsvGenExamExpandHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/addObsvGenExamExpandImg"
+                    android:layout_toStartOf="@+id/addObsvGenExamExpandImg"
+                    android:text="Expand"
+                    android:textSize="15dp"
+                    android:onClick="genExamListViewVisible"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/addObsvGenExamOptionsListView"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/addObsvGenExamLL"/>
+
+            <RelativeLayout
+                android:id="@+id/addObsvGenExamOptionsRR"
+                style="@style/addObsvLinearLayout"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:layout_below="@+id/addObsvGenExamOptionsListView">
+                <TextView
+                    android:id="@+id/addObsvGenExamOthersHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FF909090"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Others" />
+
+                <EditText
+                    android:id="@+id/addObsvGenExamInput"
+                    style="@style/addObsvInput"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignBaseline="@+id/addObsvGenExamOthersHead"
+                    android:layout_toEndOf="@+id/addObsvGenExamOthersHead"
+                    android:layout_toRightOf="@+id/addObsvGenExamOthersHead" />
+                <!--<TextView-->
+                <!--android:id="@+id/addObsvGenExamOptionsHead"-->
+                <!--style="@style/addObsvInputHead"-->
+                <!--android:text="Gen. Exam."  />-->
+                <!--<EditText-->
+                <!--android:id="@+id/addObsvGenExamInput"-->
+                <!--style="@style/addObsvInput"-->
+                <!--android:layout_alignBaseline="@+id/addObsvGenExamHead"-->
+                <!--android:layout_toEndOf="@+id/addObsvGenExamHead"-->
+                <!--android:layout_toRightOf="@+id/addObsvGenExamHead" />-->
+            </RelativeLayout>
+
+
+            <!-- Chest-->
+            <LinearLayout
+                android:id="@+id/addObsvChestLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/addObsvGenExamOptionsRR">
+                <TextView
+                    android:id="@+id/addObsvChestHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.27"
+                    android:layout_marginLeft="10dp"
+                    android:text="Chest" />
+
+                <EditText
+                    android:id="@+id/addObsvChestInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"/>
+            </LinearLayout>
+
+            <!-- Abdomen-->
+            <LinearLayout
+                android:id="@+id/addObsvAbdomenLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvChestLL">
+
+                <TextView
+                    android:id="@+id/addObsvAbdomenHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:text="Abdomen" />
+
+                <EditText
+                    android:id="@+id/addObsvAbdomenInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- Hernial Sites and genitals-->
+            <LinearLayout
+                android:id="@+id/addObsvHernialGenitalsLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvAbdomenLL">
+
+                <TextView
+                    android:id="@+id/addObsvHernialGenitalsHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:text="Hernial Sites\n &amp; Genitals" />
+
+                <EditText
+                    android:id="@+id/addObsvHernialGenitalsInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <!-- Advice-->
+            <LinearLayout
+                android:id="@+id/addObsvAdviceLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvHernialGenitalsLL">
+
+                <TextView
+                    android:id="@+id/addObsvAdviceHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:text="Advice" />
+
+                <EditText
+                    android:id="@+id/addObsvAdviceInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <!-- Priority Orders-->
+            <LinearLayout
+                android:id="@+id/addObsvPriorOrdLL"
+                style="@style/addObsvLinearLayout"
+                android:layout_below="@+id/addObsvAdviceLL">
+
+                <TextView
+                    android:id="@+id/addObsvPriorOrdHead"
+                    style="@style/addObsvInputHead"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.45"
+                    android:text="Priority\nOrders" />
+
+                <EditText
+                    android:id="@+id/addObsvPriorOrdInput"
+                    style="@style/addObsvInput"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<EditText-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:inputType="phone"-->
+    <!--android:ems="10"-->
+    <!--android:id="@+id/editText"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>

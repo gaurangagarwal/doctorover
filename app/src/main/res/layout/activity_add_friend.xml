@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    tools:context="com.gaurang.doctorover.AddFriend">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:id="@+id/addFriendRelativeLayout"
+            android:layout_height="match_parent">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:text="Add Friend"-->
+                <!--android:textSize="30dp"-->
+                <!--android:id="@+id/addFriendHead"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true" />-->
+            <EditText
+                android:layout_width="@dimen/loginInputLength"
+                android:layout_height="wrap_content"
+                android:id="@+id/addFriendName"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:hint="Friend name, email or Phone"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:layout_marginRight="16dp"
+                android:id="@+id/addFriendSearchBtn"
+                android:layout_below="@id/addFriendName"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addFriendProgressBar"
+                android:visibility="gone"
+                android:layout_below="@+id/addFriendSearchBtn"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                style="@style/addFriendFriendDetails"
+                android:text="No results Found"
+                android:id="@+id/addFriendNoResults"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/addFriendSearchBtn"/>
+
+
+            <RelativeLayout
+                style="@style/addFriendRelativeLayout"
+                android:id="@+id/addFriendNewFriendRelativeLayout0"
+                android:layout_below="@id/addFriendSearchBtn">
+                <TextView
+                    style="@style/addFriendFriendDetails"
+                    android:id="@+id/addFriendNewFriendName0"/>
+                <Button
+                    style="@style/addFriendFriendBtn"
+                    android:id="@+id/addFriendNewFriendAddBtn0"
+                    android:layout_toEndOf="@id/addFriendNewFriendName0"
+                    android:layout_toRightOf="@id/addFriendNewFriendName0"/>
+            </RelativeLayout>
+            <RelativeLayout
+                style="@style/addFriendRelativeLayout"
+                android:id="@+id/addFriendNewFriendRelativeLayout1"
+                android:layout_below="@id/addFriendNewFriendRelativeLayout0">
+                <TextView
+                    style="@style/addFriendFriendDetails"
+                    android:id="@+id/addFriendNewFriendName1"/>
+                <Button
+                    style="@style/addFriendFriendBtn"
+                    android:id="@+id/addFriendNewFriendAddBtn1"
+                    android:layout_toEndOf="@id/addFriendNewFriendName1"
+                    android:layout_toRightOf="@id/addFriendNewFriendName1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                style="@style/addFriendRelativeLayout"
+                android:id="@+id/addFriendNewFriendRelativeLayout2"
+                android:layout_below="@id/addFriendNewFriendRelativeLayout1">
+                <TextView
+                    style="@style/addFriendFriendDetails"
+                    android:id="@+id/addFriendNewFriendName2"/>
+                <Button
+                    style="@style/addFriendFriendBtn"
+                    android:id="@+id/addFriendNewFriendAddBtn2"
+                    android:layout_toEndOf="@id/addFriendNewFriendName2"
+                    android:layout_toRightOf="@id/addFriendNewFriendName2"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

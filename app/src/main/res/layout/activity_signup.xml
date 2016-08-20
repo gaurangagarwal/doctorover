@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context="com.gaurang.doctorover.SignupActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sign Up"
+            android:textSize="30dp"
+            android:layout_margin="35dp"
+            android:id="@+id/signUpHead"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/signUpName"
+            android:layout_margin="10dp"
+            android:layout_below="@id/signUpHead"
+            android:layout_centerHorizontal="true" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_below="@id/signUpName"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signUpGender">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="true"
+                android:layout_gravity="left"
+                android:id="@+id/maleRadioBtn" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginLeft="@dimen/radioBtnSideMargin"
+                android:layout_gravity="right"
+                android:layout_alignBaseline="@id/maleRadioBtn"
+                android:id="@+id/femaleRadioBtn" />
+        </RadioGroup>
+
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:hint="Email"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signUpEmail"
+            android:layout_below="@id/signUpGender"/>
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Phone"
+            android:ems="10"
+            android:maxLength="10"
+            android:layout_margin="10dp"
+            android:id="@+id/signUpPhone"
+            android:layout_below="@id/signUpEmail"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signUpPass"
+            android:layout_below="@+id/signUpPhone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/signUpBtn"
+            android:onClick="signUpBtnClick"
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/signUpPass"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

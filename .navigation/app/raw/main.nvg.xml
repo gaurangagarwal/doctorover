@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.LoginActivity"/>
+      <point      
+        x = "36"      
+        y = "108"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.SignupActivity"/>
+      <point      
+        x = "-572"      
+        y = "80"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.AddGroup"/>
+      <point      
+        x = "-172"      
+        y = "180"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.MainActivity"/>
+      <point      
+        x = "-144"      
+        y = "124"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.AddPatient"/>
+      <point      
+        x = "4"      
+        y = "136"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.gaurang.doctorover.AddFriend"/>
+      <point      
+        x = "248"      
+        y = "284"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

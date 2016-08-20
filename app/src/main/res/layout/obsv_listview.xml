@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    <!-- Condition-->
+    <TableRow
+        android:id="@+id/obsvListDoctorDateTR">
+        <TextView
+            android:id="@+id/obsvListDoctorNameVal"
+            style="@style/obsvListHead"
+            android:textColor="@android:color/holo_blue_dark"
+            android:paddingLeft="3dp"
+            android:text="Dr. Ravi" />
+        <TextView
+            android:id="@+id/obsvListDateTimeVal"
+            style="@style/obsvListVal"
+            android:gravity="right"
+            android:textColor="@android:color/tab_indicator_text"
+            android:paddingRight="3dp"
+            android:text="10:10pm 14 Jul,16" />
+    </TableRow>
+    <!--Condition-->
+    <TableRow
+        android:id="@+id/obsvListCondTR">
+        <TextView
+            android:id="@+id/obsvListCondHead"
+            style="@style/obsvListHead"
+            android:text="Condition *" />
+        <TextView
+            android:id="@+id/obsvListCondVal"
+            style="@style/obsvListVal"
+            android:text="Sick" />
+    </TableRow>
+
+    <!--Operative -->
+    <TableRow
+        android:id="@+id/obsvListOperativeTR">
+        <TextView
+            android:id="@+id/obsvListOperativeHead"
+            style="@style/obsvListHead"
+            android:text="Operative" />
+        <TextView
+            android:id="@+id/obsvListOperativeVal"
+            style="@style/obsvListVal"
+            android:text="Preoperative" />
+    </TableRow>
+
+    <!-- Blood-->
+    <TableRow
+        android:id="@+id/obsvListBloodTR">
+        <TextView
+            android:id="@+id/obsvListBloddHead"
+            style="@style/obsvListHead"
+            android:text="Blood" />
+        <TextView
+            android:id="@+id/obsvListBloodVal"
+            style="@style/obsvListVal"
+            android:text="B+" />
+    </TableRow>
+
+    <!-- Radio-->
+    <TableRow
+        android:id="@+id/obsvListRadioTR">
+        <TextView
+            android:id="@+id/obsvListRadioHead"
+            style="@style/obsvListHead"
+            android:text="Radio" />
+        <TextView
+            android:id="@+id/obsvListRadioVal"
+            style="@style/obsvListVal"
+            android:text="Radiology" />
+    </TableRow>
+
+    <!--Temperature -->
+    <TableRow
+        android:id="@+id/obsvListTempTR">
+        <TextView
+            android:id="@+id/obsvListTempHead"
+            style="@style/obsvListHead"
+            android:text="Temperture" />
+        <TextView
+            android:id="@+id/obsvListTempVal"
+            style="@style/obsvListVal"
+            android:text="Febrile" />
+    </TableRow>
+
+    <!-- Pulse-->
+    <TableRow
+        android:id="@+id/obsvListPulseTR">
+        <TextView
+            android:id="@+id/obsvListPulseHead"
+            style="@style/obsvListHead"
+            android:text="Pulse" />
+        <TextView
+            android:id="@+id/obsvListPulseVal"
+            style="@style/obsvListVal"
+            android:text="72 per min" />
+    </TableRow>
+
+    <!-- Respiration-->
+    <TableRow
+        android:id="@+id/obsvListRespTR">
+        <TextView
+            android:id="@+id/obsvListRespHead"
+            style="@style/obsvListHead"
+            android:text="Respiration" />
+        <TextView
+            android:id="@+id/obsvListRespVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+
+    <!-- general Examination-->
+    <TableRow
+        android:id="@+id/obsvListGenExamTR">
+        <TextView
+            android:id="@+id/obsvListGenExamHead"
+            style="@style/obsvListHead"
+            android:text="Gen Exam" />
+        <TextView
+            android:id="@+id/obsvListGenExamVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+    <!-- Chest-->
+    <TableRow
+        android:id="@+id/obsvListChestTR">
+        <TextView
+            android:id="@+id/obsvListChestHead"
+            style="@style/obsvListHead"
+            android:text="Chest" />
+        <TextView
+            android:id="@+id/obsvListChestVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+    <!-- Abdomen-->
+    <TableRow
+        android:id="@+id/obsvListAbdomenTR">
+        <TextView
+            android:id="@+id/obsvListAbdomenHead"
+            style="@style/obsvListHead"
+            android:text="Abdomen" />
+        <TextView
+            android:id="@+id/obsvListAbdomenVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+    <!-- Hernials Sites and Genitals-->
+    <TableRow
+        android:id="@+id/obsvListHernialsGenitalsTR">
+        <TextView
+            android:id="@+id/obsvListHernialsGenitalsHead"
+            style="@style/obsvListHead"
+            android:text="Hernial Sites\n&amp; Genitals" />
+        <TextView
+            android:id="@+id/obsvListHernialsGenitalsVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+
+    <!-- Advice-->
+    <TableRow
+        android:id="@+id/obsvListAdviceTR">
+        <TextView
+            android:id="@+id/obsvListAdviceHead"
+            style="@style/obsvListHead"
+            android:text="Advice" />
+        <TextView
+            android:id="@+id/obsvListAdviceVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+
+    <!-- Priority Order-->
+    <TableRow
+        android:id="@+id/obsvListPriorOrdTR">
+        <TextView
+            android:id="@+id/obsvListPriorOrdHead"
+            style="@style/obsvListHead"
+            android:text="Priority Order" />
+        <TextView
+            android:id="@+id/obsvListPriorOrdVal"
+            style="@style/obsvListVal"
+            android:text="Abnormal" />
+    </TableRow>
+    <!--&lt;!&ndash; Doctor Name&ndash;&gt;-->
+    <!--<TableRow-->
+        <!--android:id="@+id/obsvListDoctorNameTR">-->
+        <!--<TextView-->
+            <!--android:id="@+id/obsvListDoctorNameHead"-->
+            <!--style="@style/obsvListHead"-->
+            <!--android:text="Doctor By" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/obsvListDoctorNameVal"-->
+            <!--style="@style/obsvListVal"-->
+            <!--android:text="Abnormal" />-->
+    <!--</TableRow>-->
+    <!--&lt;!&ndash; Date Time&ndash;&gt;-->
+    <!--<TableRow-->
+        <!--android:id="@+id/obsvListDateTimeTR">-->
+        <!--<TextView-->
+            <!--android:id="@+id/obsvListDateTimeHead"-->
+            <!--style="@style/obsvListHead"-->
+            <!--android:text="Date Time" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/obsvListDateTimeVal"-->
+            <!--style="@style/obsvListVal"-->
+            <!--android:text="Abnormal" />-->
+    <!--</TableRow>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListCondVal"-->
+    <!--style="@style/obsvListHead"-->
+    <!-- -->
+    <!--android:text="Condition : Sick" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListBlood"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListCond"-->
+    <!--android:text="Blood : B+" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListRadio"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListBlood"-->
+    <!--android:text="Radio : Radiology" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListTemp"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListRadio"-->
+    <!--android:text="Temperature : Febrile" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListPulse"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListTemp"-->
+    <!--android:text="Pulse : 10 per minute" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListGenExam"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListPulse"-->
+    <!--android:text="Gen. Exam : a askdb as" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListChest"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListGenExam"-->
+    <!--android:text="Pulse : 10 per minute" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/obsvListAbdomen"-->
+    <!--style="@style/obsvListHead"-->
+    <!--android:layout_below="@+id/obsvListChest"-->
+    <!--android:text="Abdomen : 10 per minute" />-->
+
+
+</TableLayout>

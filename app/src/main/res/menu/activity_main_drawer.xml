@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainFragment"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/addFriend"
+            android:icon="@drawable/add_friend"
+            android:title="Add Friends" />
+        <item
+            android:id="@+id/addGroup"
+            android:icon="@drawable/add_group"
+            android:title="Create Group" />
+        <item
+            android:id="@+id/editGroup"
+            android:icon="@drawable/edit_group"
+            android:title="Edit Group" />
+        <!--<item-->
+        <!--android:id="@+id/addPatient"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Add Patient" />-->
+    </group>
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_how"
+                android:icon="@drawable/how_to_use"
+                android:title="How to Use?" />
+        </menu>
+    </item>
+
+
+    <item android:title="Interactive">
+        <menu>
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>

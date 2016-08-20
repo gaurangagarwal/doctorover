@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.gaurang.doctorover.AddGroup">
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Add Group"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textSize="24dp"-->
+        <!--android:id="@+id/addGroupHead"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+    <EditText
+        android:layout_width="@dimen/loginInputLength"
+        android:layout_height="wrap_content"
+        android:id="@+id/addGroupName"
+        android:layout_centerHorizontal="true"
+        android:hint="Group Name"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/addGroupParticipantsHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addGroupName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Participants"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addGroupProgressBar"
+        android:visibility="gone"
+        android:layout_below="@+id/addGroupParticipantsHead"
+        android:layout_centerHorizontal="true" />
+
+
+    <ListView
+        android:id="@+id/addGroupFriendList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layoutAnimation = "@anim/my_layout_animation"
+        android:layout_below="@+id/addGroupParticipantsHead" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Save"-->
+        <!--android:onClick="addGroupSaveGroupBtnPressed"-->
+        <!--android:id="@+id/addGroupSaveGroup"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>

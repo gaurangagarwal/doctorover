@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaurang.doctorover.AddPatient">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!--Patient Name -->
+    <LinearLayout
+        android:id="@+id/addPatientNameLL"
+        style="@style/addPatientLinearLayout">
+        <TextView
+            android:id="@+id/addPatientNameHead"
+            style="@style/addPatientInputHead"
+            android:text="Name"/>
+        <EditText
+            android:id="@+id/addPatientInputName"
+            style="@style/addPatientInput"/>
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/addPatientNameHead"-->
+        <!--style="@style/addPatientInputHead"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:text="Name"/>-->
+    <!--<EditText-->
+        <!--android:id="@+id/addPatientInputName"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:ems="10"-->
+        <!--android:layout_toRightOf="@+id/addPatientNameHead"-->
+        <!--android:layout_toEndOf="@+id/addPatientNameHead"-->
+        <!--android:layout_alignBaseline="@+id/addPatientNameHead" />-->
+
+    <!--Patient Gender -->
+    <LinearLayout
+        android:id="@+id/addPatientGenderLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientNameLL">
+        <TextView
+            android:id="@+id/addPatientGenderHead"
+            style="@style/addPatientInputHead"
+            android:text="Gender"/>
+        <RadioGroup
+            android:id="@+id/addPatientGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/addPatientGenderHead"
+            android:layout_alignLeft="@+id/addPatientInputRegNo"
+            android:layout_alignStart="@+id/addPatientInputRegNo">
+            <RadioButton
+                android:id="@+id/addPatientMaleRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"  />
+            <RadioButton
+                android:id="@+id/addPatientFemaleRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Female" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addPatientAgeLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientGenderLL">
+        <TextView
+            android:id="@+id/addPatientAgeHead"
+            style="@style/addPatientInputHead"
+            android:text="Age"/>
+        <EditText
+            android:id="@+id/addPatientInputAge"
+            android:inputType="number"
+            android:maxLength="3"
+            style="@style/addPatientInput"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addPatientPhoneLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientAgeLL">
+        <TextView
+            android:id="@+id/addPatientPhoneHead"
+            style="@style/addPatientInputHead"
+            android:text="Phone"/>
+        <EditText
+            android:id="@+id/addPatientInputPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_alignBaseline="@+id/addPatientPhoneHead"
+            android:layout_toRightOf="@+id/addPatientPhoneHead"
+            android:layout_toEndOf="@+id/addPatientPhoneHead"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/addPatientGroupNameHead"
+        style="@style/addPatientInputHead"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/addPatientPhoneLL"
+        android:text="Group Name"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPatientGroupNameProgressBar"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/addPatientGroupNameHead"
+        android:layout_toRightOf="@+id/addPatientGroupNameHead"
+        android:layout_toEndOf="@+id/addPatientGroupNameHead"/>
+    <Spinner
+        android:id="@+id/addPatientInputGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/choose_group"
+        android:layout_alignBaseline="@+id/addPatientGroupNameHead"
+        android:layout_toRightOf="@+id/addPatientGroupNameHead"
+        android:layout_toEndOf="@+id/addPatientGroupNameHead"/>
+
+
+    <!--Reg No. -->
+    <LinearLayout
+        android:id="@+id/addPatientRegNoLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientGroupNameHead">
+        <TextView
+            android:id="@+id/addPatientRegNoHead"
+            style="@style/addPatientInputHead"
+            android:layout_below="@+id/addPatientGroupNameHead"
+            android:text="Reg. No."/>
+        <EditText
+            android:id="@+id/addPatientInputRegNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_toRightOf="@+id/addPatientRegNoHead"
+            android:layout_toEndOf="@+id/addPatientRegNoHead"
+            android:layout_alignBaseline="@+id/addPatientRegNoHead"/>
+    </LinearLayout>
+
+
+    <!-- Bed and Room Number.-->
+    <LinearLayout
+        android:id="@+id/addPatientBedRoomLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientRegNoLL">
+        <TextView
+            android:id="@+id/addPatientBedRoomHead"
+            style="@style/addPatientInputHead"
+            android:text="Bed/Room"/>
+        <EditText
+            android:id="@+id/addPatientInputBedNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="5"
+            android:ems="10"/>
+        <TextView
+            android:id="@+id/addPatientSlashBedRoomHead"
+            style="@style/addPatientInputHead"
+            android:text="/"
+            android:layout_margin="10dp" />
+        <EditText
+            android:id="@+id/addPatientInputRoomNo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="5"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <!-- Diagnostics-->
+    <LinearLayout
+        android:id="@+id/addPatientDiagLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientBedRoomLL">
+        <TextView
+            android:id="@+id/addPatientDiag"
+            style="@style/addPatientInputHead"
+            android:text="Diagnostics"/>
+        <EditText
+            android:id="@+id/addPatientInputDiag"
+            style="@style/addPatientInput"/>
+    </LinearLayout>
+    <!-- Consultant-->
+    <LinearLayout
+        android:id="@+id/addPatientConsultLL"
+        style="@style/addPatientLinearLayout"
+        android:layout_below="@+id/addPatientDiagLL">
+        <TextView
+            android:id="@+id/addPatientConsult"
+            style="@style/addPatientInputHead"
+            android:layout_below="@+id/addPatientDiag"
+            android:text="Consultant"/>
+        <EditText
+            android:id="@+id/addPatientInputConsult"
+            android:text="Dr. "
+            style="@style/addPatientInput"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/addPatientBtn"
+        android:onClick="addPatientSaveBtnPressed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Patient"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/addPatientConsultLL"/>
+
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

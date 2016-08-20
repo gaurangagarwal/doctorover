@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.gaurang.doctorover.LoginActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Login"
+            android:textSize="40dp"
+            android:layout_margin="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loginHead" />
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_margin="@dimen/loginInputMargin"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameInput"
+            android:paddingTop="0dp"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/loginHead"
+            android:hint="Email or Phone" />
+
+        <EditText
+            android:layout_width="@dimen/loginInputLength"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/loginInputMargin"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:paddingTop="0dp"
+            android:layout_below="@id/usernameInput"
+            android:hint="Password"
+            android:id="@+id/passwordInput" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="20dp"
+            android:layout_below="@id/passwordInput"
+            android:id="@+id/loginBtn"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"
+            android:onClick="loginBtnPressed"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or Sign up"
+            android:id="@+id/signUpBtn"
+            android:layout_below="@id/loginBtn"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="openSignUpActivity"
+            android:textColor="@color/colorAccent"
+            android:background="#00ffffff" />
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--android:text="or Sign Up"-->
+            <!--android:onClick="openSignUpActivity"-->
+            <!--android:id="@+id/signUpBtn"-->
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

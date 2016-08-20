@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_light"
+    tools:context="com.gaurang.doctorover.PatientData">
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Patient Name"-->
+        <!--android:padding="16dp"-->
+        <!--android:id="@+id/patientDataNameHead"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Add Data"-->
+        <!--android:id="@+id/patientDataNewDataBtn"-->
+        <!--android:onClick="dataPatientAddDataBtnPress"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+    <ListView
+        android:id="@+id/patientDataListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:divider="@color/background_floating_material_light"
+        android:dividerHeight="15dp"/>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_below="@+id/patientDataNameHead"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/scrollView2">-->
+    <!--</ScrollView>-->
+
+
+
+</RelativeLayout>

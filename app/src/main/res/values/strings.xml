@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Doctor Over</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="choose_group">Choose Group</string>
+    <string name="title_activity_patient_data">PatientData</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_to_use">1. Add Friends : Find your colleague doctors and add them to your friend List\n
+        2. Add Group : Create group from doctors in your friend list\n
+        3. Add Patient: (Plus icon on home page) Add patients to your groups\n
+        4. Add Data : (By clicking on patient name on home page)Add the obserations of patients that are added in you groups</string>
+    <string name="why_to_use">
+        The basic use of this app is that you can monitor the patient observations while you are away.\n
+        Groups helps you in a way that only some doctors can monitor/add observations/add Data of the patient.\n
+        </string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Add Friend</string>
+    <string name="slide_1_desc">To begin, get started by adding your colleagues to your friend list</string>
+
+    <string name="slide_2_title">Create Group</string>
+    <string name="slide_2_desc">Create specialized groups to monitor the patients together</string>
+
+    <string name="slide_3_title">Add Patients</string>
+    <string name="slide_3_desc">Patients can added using ⊕ sign in bottom right corner of the home screen</string>
+
+    <string name="slide_4_title">Add Observations</string>
+    <string name="slide_4_desc">When you are done with adding patients, click on patient name and then on Add Obsv button, to add data of patients</string>
+
+</resources>

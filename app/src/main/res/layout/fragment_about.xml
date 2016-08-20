@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaurang.doctorover.AboutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/aboutVersionHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="App Version: "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/aboutVersionValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/aboutVersionHead"
+                android:layout_toRightOf="@+id/aboutVersionHead"
+                android:text="1.2"
+                android:textColor="#000"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/aboutWhyToUseHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Why to use ?"
+                android:layout_below="@+id/aboutVersionHead"
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/aboutWhyToUseBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutWhyToUseHead"
+                android:text="@string/why_to_use"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <TextView
+                android:id="@+id/aboutHowToUseHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="How to use ?"
+                android:layout_below="@+id/aboutWhyToUseBody"
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/aboutHowToUseBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutHowToUseHead"
+                android:text="@string/how_to_use"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/aboutMadeByHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/aboutHowToUseBody"
+                android:text="Developed By : "
+                android:textAppearance="?android:textAppearanceLarge" />
+            <!--<ImageView-->
+                <!--android:id="@+id/aboutImage"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:src="@drawable/my_image"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/aboutMadeByHead"/>-->
+            <TextView
+                android:id="@+id/aboutNameHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutMadeByHead"
+                android:text="Gaurang Agarwal"
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/aboutEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/aboutNameHead"
+                android:text="2014csb1012@iitrpr.ac.in\ngaurangagarwall11@gmail.com"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/aboutIconHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutEmail"
+                android:text="Icons made by:"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:textAppearanceLarge" />
+            <TextView
+                android:id="@+id/aboutIcon8Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutIconHead"
+                android:text="Icons8"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <TextView
+                android:id="@+id/aboutFreePikBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutIcon8Body"
+                android:text="Free Pik from Flaticon"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
